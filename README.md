@@ -28,7 +28,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|tweet_id|integer|null: false, foregin_key :true|
+|tweet_id|integer|null: false|
 
 ###Assosiation
 - has_many :messeages
