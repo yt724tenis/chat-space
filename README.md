@@ -1,29 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
 #chat-space DB設計
 
 ##usersテーブル
@@ -34,10 +8,10 @@ Things you may want to cover:
 |password|string|null: false|
 
 ###Assosiation
-- has_many :tweets
+- has_many :messeages
 - has_many :groups, throuth: :groups_users
 
-##tweetsテーブル
+##messeageテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text||
@@ -56,7 +30,7 @@ Things you may want to cover:
 |tweet_id|integer|null: false, foregin_key :true|
 
 ###Assosiation
-- belongs_to :tweet
+- belongs_to :messeage
 - has_many : users, throuth: :groups_users
 
 ##groups_usersテーブル
