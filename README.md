@@ -10,6 +10,7 @@
 ###Assosiation
 - has_many :messeages
 - has_many :groups, throuth: :groups_users
+- has_many :groups_users
 
 ##messeageテーブル
 |Column|Type|Options|
@@ -17,6 +18,7 @@
 |text|text||
 |image|text||
 |user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false,foreign_key: true|
 
 ###Assosiation
 - belongs_to :user
@@ -25,13 +27,13 @@
 ##groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|text|null: false|
-|user_id|integer|null: false, foreign_key :true|
+|name|string|null: false|
 |tweet_id|integer|null: false, foregin_key :true|
 
 ###Assosiation
-- belongs_to :messeage
+- has_many :messeages
 - has_many : users, throuth: :groups_users
+- has_many :groups_users
 
 ##groups_usersテーブル
 |Column|Type|Options|
