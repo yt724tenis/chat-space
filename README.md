@@ -18,6 +18,7 @@
 |text|text||
 |image|text||
 |user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ###Assosiation
 - belongs_to :user
@@ -27,7 +28,6 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|tweet_id|integer|null: false、foreign_key: true|
 
 ###Assosiation
 - has_many :messeages
