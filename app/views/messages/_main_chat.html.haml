@@ -23,9 +23,9 @@
   .chat-main__message-form 
     %form.send__message-form
       .chat-main__input-message-box
-        %input.message_content.input-message-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}
-        %label.input-box__image-btn{:for => "message_image"}
+        %input.message_content.input-message-box__text{"name": "message[content]", "placeholder": "type a message", "type": "text"}
+        %label.input-box__image-btn{"for": "message_image"}
           = icon('far', 'image')
-          %input.input-box__image__file{:name => "message[image]", :type => "file", :id => "message_image", :style => "display: none"}
+          %input.input-box__image__file{"name": "message[image]", "type": "file", "id": "message_image", "style": "display: none"}
       .message-form__send-btn
         send     
