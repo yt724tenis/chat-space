@@ -1,0 +1,16 @@
+.side
+  .side-bar__header
+    .side-bar__top-items
+      masa
+      %ul.side-bar__top-items__icon
+        =link_to "#", class: "side__btn side__btn--edit" do
+          =icon('fas', 'edit', class: "side__btn--icon")
+        =link_to "#", class: "side__btn side__btn--cog" do
+          =icon('fas', 'cog', class: "side__btn--icon")
+  .side-bar__group-list
+    .side-bar__group
+      .side-bar__group-name
+        techcamp
+      .side-bar__group-message
+        まだメッセージがありません
+        
