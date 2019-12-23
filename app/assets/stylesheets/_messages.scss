@@ -38,14 +38,18 @@
   height: calc(100vh - 100px);
   padding: 20px 20px 0 20px;
   .side-bar__group-name {
+    color: white;
     font-size: 15px;
     padding-bottom: 5px;
   }
 }
 
 .side-bar__group-message {
+  color: white;
   font-size: 11px;
   padding-bottom: 40px;
+  text-decoration: none;
+
 }
 
 .chat {
