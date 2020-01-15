@@ -45,14 +45,13 @@ $(function (){
     .done(function(data){
       
       var html = buildHTML(data);
-      $('.chat-main__message').append(html);
-      $('form')[0].reset();
-      $('.chat-main__message').val('');
       $('.chat-main__message').animate({ scrollTop: $('.chat-main__message')[0].scrollHeight });
+    })
+    .always(function(){
       $('.message-form__send-btn').prop('disabled', false);
     })
     .fail(function() {
-        alert("メッセージが送信されませんでした")
+        alert("メッセージが送信されませんでした");
     });
   })
 });
