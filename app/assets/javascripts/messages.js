@@ -43,7 +43,6 @@ $(function (){
       contentType: false
     })
     .done(function(data){
-      
       var html = buildHTML(data);
       $('.chat-main__message').animate({ scrollTop: $('.chat-main__message')[0].scrollHeight });
     })
