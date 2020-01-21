@@ -89,7 +89,7 @@ $(function (){
         }  
       })  
       .fail(function() {
-        console.log('error');
+        alert("メッセージが送信されませんでした");
       });
     };
 
