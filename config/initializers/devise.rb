@@ -9,7 +9,7 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = 'bcdf79c2855930d5cef4bca26689e56982bad46c0bccc2ca5830ecd7dde21c2f295f2815acc0519629b82555f657ce334e90f5fa95fee408185eb68a421239ed'
-
+  config.secret_key = '62a34fa5de412cfec1a94e3620d184465f0a65aec1d2497226cf08471602c7fd6cf2a4ee9f6ed1df783a108f253fee3845b7c02bee93315f67f515602bbed66d'
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -292,7 +292,6 @@ Devise.setup do |config|
   # end
 
   # ==> Configuration for :registerable
-
   # When set to false, does not sign a user in automatically after their password is
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
